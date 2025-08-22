@@ -1,0 +1,70 @@
+[package]
+name = "order-book"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+tokio-tungstenite = { version = "0.20", features = ["native-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+url = "2.4"
+futures-util = "0.3"
+solana-sdk = "1.17"
+solana-client = "1.17"
+solana-program = "1.17"
+solana-account-decoder = "1.17"
+spl-token = "4.0"
+spl-associated-token-account = "2.2"
+anchor-lang = "0.29"
+anchor-client = "0.29"
+ratatui = "0.26"
+crossterm = "0.27"
+hmac = "0.12"
+sha2 = "0.10"
+hex = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+textplots = "0.8"
+plotters = "0.3"
+crossbeam = "0.8"
+dashmap = "5.5"
+parking_lot = "0.12"
+num_cpus = "1.16"
+reqwest = { version = "0.11", features = ["json"] }
+
+[[example]]
+name = "order_book_demo"
+path = "examples/order_book_demo.rs"
+
+[[example]]
+name = "websocket_client"
+path = "examples/websocket_client.rs"
+
+[[example]]
+name = "polymarket_orders"
+path = "examples/polymarket_orders.rs"
+
+[[example]]
+name = "coin_switcher_demo"
+path = "examples/coin_switcher_demo.rs"
+
+[[example]]
+name = "textplots_charts"
+path = "examples/textplots_charts.rs"
+
+[[example]]
+name = "high_frequency_trading"
+path = "examples/high_frequency_trading.rs"
+
+[[example]]
+name = "concurrent_testing"
+path = "examples/concurrent_testing.rs"
+
+[[example]]
+name = "synchronized_trading"
+path = "examples/synchronized_trading.rs"
+
+[[example]]
+name = "binance_realtime"
+path = "examples/binance_realtime.rs"
